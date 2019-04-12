@@ -1,0 +1,62 @@
+ proc            0  open my output file.
+ proc            0  bufer_size_pp=          100
+ name of the log file
+ LogFile_out_Xe_layer_3.5-dens3d_110.dat                                        
+  
+ my_master,my_slave1 and 2           0           1           2
+  proc            0  my parameters period,  derorder,npoints,nppp            4
+          64      125440        5226
+  proc            0  my dx,dy,dz,dV   0.250544754349643     
+ -0.144652081367857       0.310262885198750       2.248898339554280E-002
+  proc            0  my perx,pery,perz            1           1           0
+ ax,ay,az   7.01525312179000        4.05025827830000     
+  0.000000000000000E+000
+ bx,by,bz   7.01525312179000       -4.05025827830000     
+  0.000000000000000E+000
+ cx,cy,cz  0.000000000000000E+000  0.000000000000000E+000
+   49.6420616318000     
+ treat gradient            0
+ to calculate fft*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:  719 MS
+ master took           26 points from           1
+ all points not distributed yet
+ ---------- LIST OF POINTS ----------------
+ ---my number of points ---        5226
+ min and max density -1.604278784050000E-006   15.4131550476000     
+ to distribute density*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:   69 MS
+ to calculate local energy*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:    1 MS
+ my_master,my_slave1 and 2           0           1           2
+ total number of points after trimming        24617
+ q0min,q0max  0.246840190000000        8.09642020000000     
+ ---------- LIST OF POINTS after trimming----------------
+ ---my number of points without the trimmed points---        1025
+ to load and distribute trimmed points*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:  261 MS
+  proc            0  my kernel parameters         2000        2000         100
+         400
+  proc            0  my other kernel params   0.100049524762381     
+  0.100049524762381       0.202020202010101       2.506265659147870E-003
+   200.000000000000        200.000000000000        20.0000000000000     
+ my_master,my_slave1 and 2           0           1           2
+ about to calculate kernel
+ loading kernel from file
+ to load kernel*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:   53 MS
+ nphi,qmin_cut,phi0_analitic         100   1.10000000000000     
+   2.50000000000000     
+ px,py,pz           3           3           3
+ dq   7.067091111111112E-002
+ calculating phi0            0
+ q0min and q0max from file phi0    1.10000000000000        8.09642020000000     
+ to calculate phi0*******************
+elapsed_time  0 D:  0 H:  0 M:  3 S:  583 MS
+ to calculate 0th unit cell energy*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:  668 MS
+ CALLING PERIODIC RING
+ to calculate energy*******************
+elapsed_time  0 D:  0 H:  0 M: 11 S:   86 MS
+ to collect points*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:  127 MS
+ proc            0  close my output file.

@@ -1,0 +1,69 @@
+ Job started on           24  processors.
+ using input file input_Xe_Layer_3.5                                          
+ input density file out_Xe_layer_3.5-dens3d                                     
+ periodicity            4
+ derivation order           64
+ file used for gradientfft_derivs                    
+ trimming limit   1.000000000000000E-004
+ perx,pery,perz            1           1           0
+ calculating gradient by means of fft
+  bufer_size_pp=          100
+  bufer_size=         2400
+  nphi0=          100
+  r_cutoff=    2000.00000000000       AA
+ nx,ny,nz        28       28      160
+       x0,y0,z0         0.00000000        0.00000000        0.00000000
+       ax,ay,az         7.01525312        4.05025828        0.00000000
+       bx,by,bz         7.01525312       -4.05025828        0.00000000
+       cx,cy,cz         0.00000000        0.00000000       49.64206163
+       dx,dy,dz         0.25054475       -0.14465208        0.31026289
+     b1x,b1y,b1z       -0.44782314       -0.77565242        0.00000000
+     b2x,b2y,b2z       -0.44782314        0.77565242        0.00000000
+     b3x,b3y,b3z        0.00000000        0.00000000       -0.12656979
+             dV         0.02248898
+ total number of points       125440
+ number of points per processor         5226
+ starting=================
+ y 2019 d 12 m  4
+10: 4:20:124
+ running on           24  CPUs
+ master is calculating gradient using fft
+ to calculate fft*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:  719 MS
+ TOTAL NUMBER OF ELECTRONS IS    29.9508176952772     
+ min and max density on master  -1.604278784050000E-006   15.4131550476000     
+ to distribute density*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:   69 MS
+ to calculate local energy*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:    1 MS
+ total number of points after trimming        24617
+ NUMBER OF ELECTRONS AFTER TRIMMING    29.9427642101087     
+ q0min,q0max  0.246840190000000        8.09642020000000     
+ to load and distribute trimmed points*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:  261 MS
+ to load kernel*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:   53 MS
+ nphi,qmin_cut,phi0_analitic         100   1.10000000000000     
+   2.50000000000000     
+ px,py,pz           3           3           3
+ to calculate phi0*******************
+elapsed_time  0 D:  0 H:  0 M:  3 S:  583 MS
+ to calculate 0th unit cell energy*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:  668 MS
+ to calculate energy*******************
+elapsed_time  0 D:  0 H:  0 M: 11 S:   86 MS
+ ------ENERGIES  (eV) ----------------
+ Ex_lda Ec_lda Exc_lda 
+       TOTAL_LDA     -783.10552037      -59.77262220     -842.87814257
+ Ex_pbe Ec_pbe Exc_pbe 
+       TOTAL_PBE     -810.50311278      -42.20550892     -852.70862170
+ X_rev_PBE  -811.607250578605     
+ E_OFFDIAG_nlc E_DIAG_nlc E_TOTAL_xc_nlc
+        TOTAL_NL       -3.47092761        9.63845229        6.16752468
+ needed number -Ec_pbe+Ec_lda+Enl=  -11.3995886015852     
+ ------END----------------------------
+ to collect points*******************
+elapsed_time  0 D:  0 H:  0 M:  0 S:  127 MS
+ GAME OVER=================
+ y 2019 d 12 m  4
+10: 4:36:447

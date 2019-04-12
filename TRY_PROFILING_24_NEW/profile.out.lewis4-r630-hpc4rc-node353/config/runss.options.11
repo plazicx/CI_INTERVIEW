@@ -1,0 +1,15 @@
+-r
+/home/plazicx.gmail.com/JUNOLO/COMPILE_FOR_DEBUG_INTEL/TRY_PROFILING_24_NEW/profile.out.lewis4-r630-hpc4rc-node353
+--stack-stitching
+--data-limit-mb=500
+--follow-child
+--itt-config=frame
+--stackwalk=offline
+--mrte-mode=auto
+--mrte-type=java
+--type=cpu:counters:nostack
+--type=cpu:stack
+--interval=10
+--
+./vdw_lewis_intel-debug.exe
+input_Xe_Layer_3.5
