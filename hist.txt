@@ -1,0 +1,1000 @@
+  114  cd TRY_PROFILING_48_PLUS_MPI/
+  115  ll -tr
+  116  cat slurm_submit_hydra_vtune_mpi.sh 
+  117  jobss
+  118  cd ..
+  119  ll -tr
+  120  cd TRY_PROFILING_28_PLUS_MPI/
+  121  ll -tr
+  122  cat slurm_submit_hydra_vtune_mpi.sh 
+  123  cd ..
+  124  ll -tr
+  125  cd TRY_PROFILING_48_PLUS_MPI/
+  126  ll -tr
+  127  rm file_*
+  128  rm -r profile.out.lewis4-*
+  129  ll -tr
+  130  cat slurm_submit_hydra_vtune_mpi.sh 
+  131  :q
+  132  sbatch slurm_submit_hydra_vtune_mpi.sh 
+  133  jobss
+  134  scancel 10331740
+  135  jobss
+  136  cd ..
+  137  ll -tr
+  138  cd TRY_PROFILING_28_PLUS_MPI/
+  139  ll -tr
+  140  cd ..
+  141  ll -tr
+  142  cp -r TRY_PROFILING_28_PLUS_MPI/ TRY_PROFILING_24_PLUS_MPI
+  143  cd TRY_PROFILING_24_PLUS_MPI
+  144  ll -tr
+  145  vi slurm_submit_hydra_vtune_mpi.sh 
+  146  sbatch slurm_submit_hydra_vtune_mpi.sh 
+  147  jobss
+  148  scancel 10331711
+  149  cd ..
+  150  cd TRY_PROFILING_28_PLUS_MPI/
+  151  ll -tr
+  152  cd ..
+  153  rm -r TRY_PROFILING_28_PLUS_MPI/
+  154  ll -tr
+  155  cd TRY_PROFILING_48_PLUS_MPI/
+  156  ll -tr
+  157  jobss
+  158  cd ..
+  159  ll -tr
+  160  cd TRY_PROFILING_24_2_nodes_hpc5_MPI/
+  161  ll -tr
+  162  cd 
+  163  find . -name "*AUTOM*"
+  164  cd data/
+  165  find . -name "*AUTOM*"
+  166  cd ./RH_LEWIS/TEST_5000_INTEL_HYDRA_ETC/A_BIT_LONGER_TESTS/MPIRUN_BOOTSTRAP_HYDRA_NEW_MPI_STATUS_CODE/MORE_NODES/TRY_AUTOMATIC_NPROCS/
+  167  ll -0tr
+  168  ll -tr
+  169  vi slurm_submit_hydra_nprocs.sh 
+  170  ll -tr
+  171  vi slurm_submit_hydra_nprocs.sh 
+  172  ll -tr
+  173  vi slurm_submit_hydra_nprocs.sh 
+  174  cd 
+  175  cd data/
+  176  ll -tr
+  177  cd JUNOLO_TEST_HYDRA/
+  178  ll -tr
+  179  cd TRY_PROFILING
+  180  cd ..
+  181  cd TRY_PROFILING_24/
+  182  ll -tr
+  183  vi slurm_submit_hydra_vtune.sh 
+  184  cat slurm_submit_hydra_vtune.sh 
+  185  ll
+  186  cd ..
+  187  cp -r TRY_PROFILING_24/ TRY_PROFILING_2x24
+  188  cd TRY_PROFILING_2x24
+  189  ll -tr
+  190  rm -r profile.out.lewis4-r630-hpc4-node225/
+  191  rm file_*
+  192  ll 0tr
+  193  ll -tr
+  194  vi slurm_submit_hydra_vtune.sh 
+  195  sbatch slurm_submit_hydra_vtune.sh 
+  196  jobss 
+  197  cd /home/plazicx.gmail.com/JUNOLO/COMPILE_FOR_DEBUG_INTEL/TRY_PROFILING_48_PLUS_MPI/
+  198  ll -tr
+  199  ls
+  200  ll -tr
+  201  less LogFile_out_Xe_layer_3.5-dens3d_110.dat 
+  202  ll -tr
+  203  jobss
+  204  ll -tr
+  205  less results-10331744.out 
+  206  ll -tr
+  207  pwd
+  208  jobss
+  209  cd /storage/hpc/data/plazicx.gmail.com/JUNOLO_TEST_HYDRA/TRY_PROFILING_2x24/
+  210  ll -0tr
+  211  ll -tr
+  212  less results-10331752.out 
+  213  cd profile.out.lewis4-r630-hpc4-node298/
+  214  ll
+  215  cd ..
+  216  ll -tr
+  217  vi slurm_submit_hydra_vtune.sh 
+  218  ll -tr
+  219  rm -r profile.out.lewis4-r630-hpc*
+  220  rm file_*
+  221  ll -tr
+  222  sbatch slurm_submit_hydra_vtune.sh 
+  223  cd ..
+  224  ll -tr
+  225  cd 
+  226  ll -tr
+  227  cd JUNOLO/
+  228  ll -tr
+  229  cd COMPILE_
+  230  cd COMPILE_FOR_DEBUG_INTEL/
+  231  ll -tr
+  232  cp -r TRY_PROFILING_24_PLUS_MPI/ TRY_PROFILING_24_JUST_MPI
+  233  cd TRY_PROFILING_24_JUST_MPI
+  234  ll
+  235  vi slurm_submit_hydra_vtune_mpi.sh 
+  236  cp slurm_submit_hydra_vtune_mpi.sh slurm_submit_hydra_just_mpi.sh
+  237  vi slurm_submit_hydra_just_mpi.sh
+  238  sbatch slurm_submit_hydra_just_mpi.sh 
+  239  jobss
+  240  cd ..
+  241  ll -tr
+  242  cp -r TRY_PROFILING_24_PLUS_MPI/ TRY_PROFILING_24_PLUS_MPI_QUIET
+  243  cd TRY_PROFILING_24_PLUS_MPI_QUIET
+  244  ll -tr
+  245  vi slurm_submit_hydra_vtune_mpi.sh 
+  246  mv slurm_submit_hydra_vtune_mpi.sh slurm_submit_hydra_vtune_mpi_quiet.sh
+  247  sbatch slurm_submit_hydra_vtune_mpi_quiet.sh 
+  248  cd  /storage/hpc/data/plazicx.gmail.com/JUNOLO_TEST_HYDRA/TRY_PROFILING_2x24
+  249  ll -tr
+  250  cd ..
+  251  ll -tr
+  252  cd TRY_PROFILING_2x24/
+  253  ll
+  254  cd /home/plazicx.gmail.com/JUNOLO/COMPILE_FOR_DEBUG_INTEL/TRY_PROFILING_24_PLUS_MPI/
+  255  ll -tr
+  256  cd /home/plazicx.gmail.com/JUNOLO/COMPILE_FOR_DEBUG_INTEL/TRY_PROFILING_24_PLUS_MPI_QUIET/
+  257  ll -tr
+  258  cd  /home/plazicx.gmail.com/JUNOLO/COMPILE_FOR_DEBUG_INTEL/TRY_PROFILING_24_JUST_MPI/
+  259  ll -tr
+  260  less results-10331756.out 
+  261  ll -tr
+  262  vi slurm_submit_hydra_just_mpi.sh 
+  263  sbatch slurm_submit_hydra_just_mpi.sh 
+  264  cd  /storage/hpc/data/plazicx.gmail.com/JUNOLO_TEST_HYDRA/TRY_PROFILING_2x24/
+  265  ll -tr
+  266  cat slurm_submit_hydra_vtune.sh 
+  267  ll t-r
+  268  ll -tr
+  269  cd ..
+  270  ll -tr
+  271  find . -name "*AUTO*"
+  272  ll -tr
+  273  cd 
+  274  ll -tr
+  275  cd JUNOLO/
+  276  ll -tr
+  277  cd COMPILE_FOR_DEBUG_INTEL/
+  278  ll -tr
+  279  cd TRY_PROFILING_24_PLUS_MPI_QUIET/
+  280  ll -tr
+  281  cd profile.out.lewis4-r630-hpc4-node231/
+  282  ll
+  283  cd ..
+  284  ll -tr
+  285  cd ..
+  286  ll -tr
+  287  cd TRY_PROFILING_24_PLUS_MPI
+  288  ll -t
+  289  ll -tr
+  290  cd ..
+  291  ll -tr
+  292  cd TRY_PROFILING_24_PLUS_MPI_QUIET/
+  293  ll -tr
+  294  less results-10331757.out 
+  295  ll -tr
+  296  cd ..
+  297  ll -tr
+  298  cd TRY_PROFILING_24_PLUS_MPI
+  299  less results-10331748.out 
+  300  ll -tr
+  301  cd ..
+  302  ll -tr
+  303  cd TRY_PROFILING_24_JUST_MPI/
+  304  ll -tr
+  305  less results-103317
+  306  less results-10331764.out 
+  307  cd ..
+  308  rm -r TRY_PROFILING_24_JUST_MPI/
+  309  ll
+  310  cd TRY_PROFILING_48_PLUS_MPI/
+  311  ll -t
+  312  ca slurm_submit_hydra_vtune_mpi.sh 
+  313  cat slurm_submit_hydra_vtune_mpi.sh 
+  314  cd  /home/plazicx.gmail.com/R_TEST/
+  315  ll -tr
+  316  vi submit_R.sh 
+  317  sbatch submit_R.sh 
+  318  ll -tr
+  319  less slurm-10331775.out 
+  320  cd 
+  321  cd data/
+  322  ll -tr
+  323  cd JUNOLO_TEST_HYDRA/
+  324  ll -tr
+  325  cd TRY_INTEL_TRACE/
+  326  ll -tr
+  327  ls
+  328  cd ..
+  329  cp -r TRY_INTEL_TRACE TRY_INTEL_TRACE_24
+  330  cd TRY_INTEL_TRACE_24
+  331  ll -tr
+  332  rm vdw.exe.*
+  333  ll
+  334  rm file_
+  335  rm file_*
+  336  ll -tr
+  337  vi slurm_submit_hydra_trace.sh 
+  338  sbatch slurm_submit_hydra_trace.sh 
+  339  jobss
+  340  ll -tr
+  341  jobss
+  342  ll -tr
+  343  vi slurm_submit_hydra_trace.sh 
+  344  ll -tr
+  345  sbatch 
+  346  jobss
+  347  ll -t
+  348  ll -tr
+  349  less slurm_submit_hydra_trace.sh 
+  350  ll -tr
+  351  jobss
+  352  scancel 10331776
+  353  ll
+  354  ll -tr
+  355  vi slurm_submit_hydra_trace.sh 
+  356  sbatch slurm_submit_hydra_trace.sh 
+  357  jobss
+  358  ll
+  359  ll -tr
+  360  less LogFile_out_Xe_layer_3.5-dens3d_110.dat 
+  361  ll t-r
+  362  ll -tr
+  363  ls
+  364  vi slurm_submit_hydra_trace.sh 
+  365  ll -tr
+  366  jobss
+  367   cd ..
+  368  mv TRY_INTEL_TRACE_24/ TRY_INTEL_TRACE_16
+  369  cd TRY_INTEL_TRACE_16/
+  370  pwd
+  371  cd ..
+  372  cp -r TRY_INTEL_TRACE_16/ TRY_INTEL_TRACE_16_2_NODES
+  373  cd TRY_INTEL_TRACE_16_2_NODES
+  374  ll
+  375  rm vdw.exe.*
+  376  ll
+  377  rm file_* calc_output
+  378  ll
+  379  rm calc_output*
+  380  rm results-10*
+  381  ll -t
+  382  vi slurm_submit_hydra_trace.sh 
+  383  sbatch slurm_submit_hydra_trace.sh 
+  384  jobss 
+  385  ll -tr
+  386  less results-10331779.out 
+  387  vi slurm_submit_hydra_trace.sh 
+  388  less results-10331779.out 
+  389  ll -tr
+  390  cat results-10331779.out 
+  391  jobss
+  392  ll -tr
+  393  cd ..
+  394  cp -r TRY_INTEL_TRACE_16_2_NODES/ TRY_INTEL_TRACE_16_2_NODES_vtune
+  395  cd TRY_INTEL_TRACE_16_2_NODES_vtune
+  396  vi slurm_submit_hydra_trace.sh 
+  397  ll
+  398  rm vdw.exe.*
+  399  ll -tr
+  400  rm file_*
+  401  cat slurm_submit_hydra_trace.sh 
+  402  sh /cluster/software/intel/parallel_studio_xe_2016/parallel_studio_xe_2016.2.062/psxevars.sh --vtune 
+  403  mpsvars.sh --vtune
+  404  ll
+  405  vi slurm_submit_hydra_trace.sh 
+  406  sbatch slurm_submit_hydra_trace.sh 
+  407  jobs
+  408  jobss
+  409  ll -tr
+  410  less results-10331781.out 
+  411  ll t-r
+  412  ll -tr
+  413  less results-10331781.out 
+  414  ll -tr
+  415  cd ..
+  416  ll -tr
+  417  cp -r TRY_INTEL_TRACE_16_2_NODES TRY_INTEL_TRACE_16_2_NODES_AUTO_COUNT
+  418  cd TRY_INTEL_TRACE_16_2_NODES_AUTO_COUNT
+  419  vi slurm_submit_hydra_trace.sh 
+  420  ll -tr
+  421  rm file_*
+  422  rm vdw.exe.*
+  423  ll -tr
+  424  sbatch slurm_submit_hydra_trace.sh 
+  425  ll -tr
+  426  cat slurm_submit_hydra_trace.sh 
+  427  jobss
+  428  ll -tr
+  429  less results-10331782.out 
+  430  ll -tr
+  431  cat slurm_submit_hydra_trace.sh 
+  432  vi slurm_submit_hydra_trace.sh 
+  433  ll -tr
+  434  vi slurm_submit_hydra_trace.sh 
+  435  ll -tr
+  436  cd 
+  437  ll -tr
+  438  cd JUNOLO/
+  439  ll -tr
+  440  cd COMPILE_FOR_DEBUG_INTEL/
+  441  ll -tr
+  442  cp -r TRY_PROFILING_24 TRY_PROFILING_24_AGAIN
+  443  cd TRY_PROFILING_24_AGAIN
+  444  jobss 
+  445  ll -tr
+  446  vi slurm_submit_hydra_vtune.sh 
+  447  less results-10331
+  448  ll -tr
+  449  date
+  450  ll -tr
+  451  less results-10331678.out 
+  452  vi slurm_submit_hydra_vtune.sh 
+  453  ll -tr
+  454  rm file_*
+  455  rm -r profile.out.lewis4-r630-hpc4-node225/
+  456  ll -tr
+  457  sbatch slurm_submit_hydra_vtune.sh 
+  458  jobss
+  459  ll -tr
+  460  jobss
+  461  ll -tr
+  462  less results-10331678.out 
+  463  rm results-10331*
+  464  ll
+  465  jobss 
+  466  cd /home/plazicx.gmail.com/JUNOLO/COMPILE_FOR_DEBUG_INTEL/TRY_PROFILING_24_AGAIN/
+  467  ll -tr
+  468  cd ..
+  469  ll -tr
+  470  cd TRY_PROFILING_24_hpc5/
+  471  ll -tr
+  472  cd ..
+  473  ll -tr
+  474  cd TRY_PROFILING_24_AGAIN/
+  475  jobss
+  476  scancel 10331794
+  477  vi slurm_submit_hydra_vtune.sh 
+  478  sbatch slurm_submit_hydra_vtune.sh 
+  479  jobss
+  480  ll -tr
+  481  jobss
+  482  history
+  483  sbatch slurm_submit_hydra_vtune.sh 
+  484  vi slurm_submit_hydra_vtune.sh 
+  485  sbatch slurm_submit_hydra_vtune.sh 
+  486  jobss
+  487  scancel 10331842
+  488  ll -tr
+  489  jobss
+  490  scancel 10331836
+  491  vi slurm_submit_hydra_vtune.sh 
+  492  jobss
+  493  ll -tr
+  494  history
+  495  ll
+  496  vi slurm_submit_hydra_vtune.sh 
+  497  sbatch slurm_submit_hydra_vtune.sh 
+  498  jobss
+  499  mkdir AND_AGAIN
+  500  cd AND_AGAIN/
+  501  cp ../* .
+  502  ll -tr
+  503  vi slurm_submit_hydra_vtune.sh 
+  504  sbatch slurm_submit_hydra_vtune.sh 
+  505  jobss
+  506  ll-t
+  507  ll -tr
+  508  cd ..
+  509  cp -r AND_AGAIN/ AND_AGAIN_@
+  510  mv AND_AGAIN_@/ AND_AGAIN_2
+  511  cd !
+  512  cd AND_AGAIN_2/
+  513  ll
+  514  ca tsl
+  515  cat slurm_submit_hydra_vtune.sh 
+  516  vi slurm_submit_hydra_vtune.sh 
+  517  sbatch slurm_submit_hydra_vtune.sh 
+  518  jobss 
+  519  sinfo -s
+  520  ll -tr
+  521  cd ..
+  522  cp -r AND_AGAIN_2 AND_AGAIN_#
+  523  mv AND_AGAIN_# AND_AGAIN_3
+  524  cd AND_AGAIN_3
+  525  vi slurm_submit_hydra_vtune.sh 
+  526  sbatch slurm_submit_hydra_vtune.sh 
+  527  jobss 
+  528  scancel 10331860 10331862 10331863
+  529  cd ../AND_AGAIN_@
+  530  cd ../AND_AGAIN_2/
+  531  vi slurm_submit_hydra_vtune.sh 
+  532  sbatch slurm_submit_hydra_vtune.sh 
+  533  jobss 
+  534  cat ~/BINS/jobss 
+  535  squeue 
+  536  squeue -u plazicx.gmail.com
+  537  cat ~/BINS/jobss 
+  538  scontrol show job 10331866
+  539  man scontrol
+  540  scontrol -a
+  541  man scontrol
+  542  scontrol --all
+  543  man scontrol
+  544  scontrol show partition Lewis
+  545  scontrol show partition *
+  546  scontrol show partition "*"
+  547  scontrol show partition all
+  548  scontrol show partition --all
+  549  scontrol show partition --all | grep PartitionName
+  550  scontrol show partition --all | grep PartitionName | wc
+  551  showq
+  552  scontrol show partition --all | grep PartitionName | wc
+  553  jobss
+  554  history
+  555  scontrol show partition hpc5
+  556  python
+  557  clear
+  558  scontrol show partition hpc5
+  559  jobss
+  560  ll t-r
+  561  ll -t
+  562  sync
+  563  squeue 
+  564  squeue | awk '{scontrol job show $1}'
+  565  squeue 
+  566  squeue | awk '{print $1}'
+  567  squeue | awk '{'scontrol show job '$1}'
+  568  squeue | awk '{'scontrol show job ' $1}'
+  569  awk '{ system("scontrol show job " $1) }' 
+  570  awk '{ system("cat  " $1) }' 
+  571  awk '{ system("print " $1) }' 
+  572  awk '{print $0}' <ciphers.txt | xargs -I{}
+  573  awk '{print $1}'  | xargs -I{}
+  574  squeue | awk '{print $1} | xargs
+  575  squeue | awk '{print $1} | xargs -I{}
+  576  squeue | awk '{print $1} | xargs -I{} scontrol show job 
+  577  squeue | awk '{print $1}
+  578  squeue | awk '{print $1}'
+  579  squeue | awk '{print $1}' | xargs -I{} scontrol show job 
+  580  squeue | awk '{print $1}' | xargs -I{} scontrol show job 
+  581  squeue | awk '{print $1}' | xargs -I{} scontrol show job | grep JobState
+  582  squeue | awk '{print $1}' | xargs -I{} scontrol show job | grep Running
+  583  squeue | awk '{print $1}' | xargs -I{} scontrol show job 
+  584  squeue | awk '{print $1}' | xargs -I{} scontrol show job > x
+  585  ll -tr
+  586  jobss
+  587  cd /home/plazicx.gmail.com/JUNOLO/COMPILE_FOR_DEBUG_INTEL/TRY_PROFILING_24_AGAIN/AND_AGAIN_3
+  588  ll
+  589  touch I_WANT_TO_RUN_ON_MAX_NUMBER_OF_CPUS_ON_A_NODE
+  590  cp I_WANT_TO_RUN_ON_MAX_NUMBER_OF_CPUS_ON_A_NODE ../AND_AGAIN_2/
+  591  cd 
+  592  sinfo -p Gpu -o %n,%G
+  593  jobss
+  594  ll -tr
+  595  less job_table_slurm_plazicx.gmail.com.txt 
+  596  squeue 
+  597  squeue  | grep PD
+  598  squeue  | grep Q
+  599  squeue  | grep R
+  600  ll -tr
+  601  sync
+  602  ll -tr
+  603  jobss
+  604  ll -tr
+  605  jobss
+  606  module load r/r-3.5.1-python-2.7.14-tk
+  607  cat disk_p
+  608  cat disk_performance.txt 
+  609  ll t-r
+  610  ll -tr
+  611  cat disk_param.txt 
+  612  mkdir R_TEST
+  613  cd R_TEST/
+  614  vi submit_R.sh
+  615  vi hello.R
+  616  ll -tr
+  617  sbatch submit_R.sh 
+  618  jobss\
+  619  jobss
+  620  ll
+  621  vi submit_R.sh 
+  622  sbatch submit_R.sh 
+  623  vi submit_R.sh 
+  624  sbatch submit_R.sh 
+  625  jobss
+  626  cd
+  627  ll -tr
+  628  cd JUNOLO/
+  629  ll
+  630  pwd
+  631  jobss
+  632  cd
+  633  ll -tr
+  634  cd data/
+  635  ll -tr
+  636  cd JUNOLO_TEST_HYDRA/
+  637  ll -tr
+  638  cd MORE_CORES/
+  639  ll
+  640  cd ..
+  641  cd MORE_NODES/
+  642  ll -tr
+  643  cd ..
+  644  ll -tr
+  645  find . -name "*5"
+  646  find . -name "*5*"
+  647  ll -tr
+  648  cd ..
+  649  ll -tr
+  650  cd JUNOLO_TEST_OPENMPI/
+  651  ll -tr
+  652  cd RUN_ON_8/
+  653  ll
+  654  less slurm_openMPI.sh 
+  655  cd ..
+  656  ll -tr
+  657  jobss
+  658  cd
+  659  ll -tr
+  660  cd JUNOLO/
+  661  ll -tr
+  662  cd COMPILE_FOR_DEBUG_INTEL/
+  663  ll -tr
+  664  jobss 
+  665  cd TRY_PROFILING_48_PLUS_MPI
+  666  ll -tr
+  667  ls
+  668  ll -tr
+  669  less LogFile_out_Xe_layer_3.5-dens3d_110.dat 
+  670  vi slurm_submit_hydra_vtune_mpi.sh 
+  671  ll -tr
+  672  jobss 
+  673  ll -tr
+  674  pwd
+  675  jobss
+  676  cat /home/plazicx.gmail.com/JUNOLO/TEST_compile_OPENMPI_INTEL/TRY_INTEL_OPENMPI/slurm_openMPI_intel.sh
+  677  cd  /home/plazicx.gmail.com/JUNOLO/TEST_compile_OPENMPI_INTEL/TRY_INTEL_OPENMPI/
+  678  scancel 10331581
+  679  ll -tr
+  680  vi slurm_openMPI_intel.sh 
+  681  sbatch slurm_openMPI_intel.sh 
+  682  jobss
+  683  ll -tr
+  684  less results-mpi-10331740.out 
+  685  ll -tr
+  686  less results-mpi-10331740.out 
+  687  cat slurm_openMPI_intel.sh 
+  688  jobss
+  689  cd  /storage/hpc/data/plazicx.gmail.com/JUNOLO_TEST_HYDRA/TRY_PROFILING_2x24/
+  690  ll -tr
+  691  less results-10331755.out 
+  692  pwd
+  693  ll profile.out.lewis4-r630-hpc4-node298
+  694  jobss
+  695  cd /home/plazicx.gmail.com/R_TEST/
+  696  scancel 10331634
+  697  ll -tr
+  698  vi submit_R.sh 
+  699  sbatch submit_R.sh 
+  700  jobss
+  701  scancel 10331770
+  702  srun --nodes=${SLURM_MNODES}
+  703  srun -p Lewis bash
+  704  srun -p -n2 Lewis bash
+  705  srun -p Lewis -n2 bash
+  706  cd
+  707  find . -name "*TAD*"
+  708  cd data/
+  709  find . -name "*TAD*"
+  710  cd ./JUNOLO_TEST_HYDRA/TRY_INTEL_TRACE/
+  711  ll -tr
+  712  less LogFile_out_Xe_layer_3.5-dens3d_110.dat 
+  713  cd ..
+  714  cd JUNOLO_TEST_HYDRA/
+  715  ll
+  716  ll -tr
+  717  cat THIS_IS_TAD_FASTER_THEN_OPENMPI 
+  718  cd  /home/plazicx.gmail.com/data/JUNOLO_TEST_OPENMPI/RUN_ON_8/
+  719  ll -tr
+  720  less LogFile_out_Xe_layer_3.5-dens3d_110.dat 
+  721  jobss
+  722  cd 
+  723  cd JUNOLO/
+  724  ll -tr
+  725  cd COMPILE_FOR_DEBUG_INTEL/
+  726  ll -tr
+  727  cd TRY_PROFILING_24
+  728  ll
+  729  pwd
+  730  sinfo -s
+  731  sinfo
+  732  c;ear
+  733  clear
+  734  ll -tr
+  735  clear
+  736  sinfo
+  737  cd
+  738  vi show_partitions.txt
+  739  ll -tr
+  740  mkdir SHOWQ
+  741  cd SHOWQ/
+  742  mv ../slurm_showq-master.zip .
+  743  unzip slurm_showq-master.zip 
+  744  ll -tr
+  745  cd slurm_showq-master/
+  746  ll
+  747  pwd
+  748  ./configure --prefix=/home/plazicx.gmail.com/SHOWQ_INSTALL
+  749  \
+  750  make
+  751  srun -n1 -p Lewis make
+  752  which gcc
+  753  g++
+  754  vi Makefile
+  755  make
+  756  ll -tr
+  757  make install
+  758  cd ../
+  759  cd ../SHOWQ_INSTALL/
+  760  ll -tr
+  761  cd bin/
+  762  ll
+  763  ./showq 
+  764  ./showq  > cluster
+  765  vi cluster 
+  766  cat cluster | grep Running
+  767  cat cluster | grep Running | awk -- '{print $4}'
+  768  cat cluster | grep Running | awk -- '{print $6}'
+  769  cat cluster | grep Running | awk -- '{print $5}'
+  770  cat cluster | grep Running | awk '{ SUM += $5} END { print SUM }'  file
+  771  cat cluster | grep Running | awk '{ SUM += $5} END { print SUM }'  
+  772  cat cluster | grep Running | awk '{ SUM += $5} END { print SUM }'
+  773  cd 
+  774  vi running.jobs
+  775  ll -tr
+  776  cd SHOWQ
+  777  cd ../SHOWQ_INSTALL/bin/
+  778  ll
+  779  cd 
+  780  ll -tr
+  781  vi running.jobs 
+  782  jobss
+  783  R
+  784  less modules_lewis.txt 
+  785  perl
+  786  srun bash
+  787  srun -n1 bash
+  788  srun python_test.py 
+  789  srun python
+  790  srun -p General pythin
+  791  srun -p General python
+  792  srun -p Lewis python
+  793  srun -p Lewis bash
+  794  ll -tr
+  795  cd data/
+  796  find . -name "*AUTO*:
+  797  find . -name "*AUTO*"
+  798  cd ./RH_LEWIS/TEST_5000_INTEL_HYDRA_ETC/A_BIT_LONGER_TESTS/MPIRUN_BOOTSTRAP_HYDRA_NEW_MPI_STATUS_CODE/MORE_NODES/
+  799  ll
+  800  cd TRY_AUTOMATIC_NPROCS/
+  801  ll -tr
+  802  cat slurm_submit_hydra_nprocs.sh 
+  803  ll
+  804  mkdir CHECK_AGAIN
+  805  cd CHECK_AGAIN/
+  806  cp ../* .
+  807  rm fajl_*
+  808  ll
+  809  rm results-102*
+  810  ll
+  811  vi slurm_submit_hydra_nprocs.sh 
+  812  sbatch slurm_submit_hydra_nprocs.sh 
+  813  ll -tr
+  814  jobss
+  815  vi slurm_submit_hydra_nprocs.sh 
+  816  ll -tr
+  817  vi slurm_submit_hydra_nprocs.sh 
+  818  less results-10331783.out  
+  819  vi slurm_submit_hydra_nprocs.sh 
+  820  ll -tr
+  821  jobss
+  822  rm fajl_*
+  823  ll -tr
+  824  sbatch slurm_submit_hydra_nprocs.sh 
+  825  jobss
+  826  ll -tr
+  827  less results-10331784.out 
+  828  vi slurm_submit_hydra_nprocs.sh 
+  829  cat ../slurm_submit_hydra_nprocs.sh 
+  830  bash -c 
+  831  vi slurm_submit_hydra_nprocs.sh 
+  832  sbatch slurm_submit_hydra_nprocs.sh 
+  833  jobss 
+  834  ll -tr
+  835  rm results-1033178*
+  836  ll -tr
+  837  jobss 
+  838  ll -tr
+  839  less results-10331785.out 
+  840  ll -tr
+  841  vi slurm_submit_hydra_nprocs.sh 
+  842  ll -tr
+  843  less results-10331785.out 
+  844  ll -tr
+  845  sbatch slurm_submit_hydra_nprocs.sh 
+  846  jobss
+  847  ll -tr
+  848  jobss
+  849  ll -tr
+  850  less results-10331787.out 
+  851  cat results-10331785.out 
+  852  vi slurm_submit_hydra_nprocs.sh 
+  853  cp ../slurm_submit_hydra_nprocs.sh .
+  854  vi slurm_submit_hydra_nprocs.sh 
+  855  cat slurm_submit_hydra_nprocs.sh 
+  856  vi slurm_submit_hydra_nprocs.sh 
+  857  sbatch slurm_submit_hydra_nprocs.sh 
+  858  jobss 
+  859  cd ..
+  860  ll
+  861  cat slurm_submit_hydra_nprocs.sh 
+  862  ll -tr
+  863  cd CHECK_AGAIN/
+  864  ll -tr
+  865  cat slurm_submit_hydra_nprocs.sh 
+  866  vi slurm_submit_hydra_nprocs.sh 
+  867  ll -tr
+  868  vi slurm_submit_hydra_nprocs.sh 
+  869  ll -tr
+  870  jobss
+  871  rm fajl_*
+  872  ll -tr
+  873  jobss
+  874  cp slurm_submit_hydra_nprocs.sh slurm_submit_hydra_nprocs_show_hosts.sh
+  875  cp slurm_submit_hydra_nprocs_show_hosts.sh ~
+  876  ll -tr
+  877  less results-10331822.out 
+  878  vi slurm_submit_hydra_nprocs_show_hosts.sh 
+  879  mkdir NOW_2_NODES
+  880  cd NOW_2_NODES/
+  881  cp ../* .
+  882  ll ptr
+  883  ll -tr
+  884  rm fajl_*
+  885  rm results-10331*
+  886  rm slurm_submit_hydra_nprocs.sh 
+  887  vi slurm_submit_hydra_nprocs_show_hosts.sh 
+  888  sbatch slurm_submit_hydra_nprocs_show_hosts.sh 
+  889  jobss 
+  890  ll -tr
+  891  date
+  892  cd ..
+  893  ll -tr
+  894  cd NOW_2_NODES/
+  895  ll -tr
+  896  less nodelist.159118 
+  897  ll -tr
+  898  jobss
+  899  ll -tr
+  900  less nodelist.159118 
+  901  cat nodelist.*
+  902  ll -tr
+  903  less racun1.log 
+  904  less ../racun1.log 
+  905  ll -tr
+  906  rm nodelist.88056 
+  907  cat nodelist.159118 
+  908  vi slurm_submit_hydra_nprocs_show_hosts.sh 
+  909  ll -tr
+  910  mkdir NEW_SCRIPT
+  911  cd NEW_SCRIPT/
+  912  cp ../* .
+  913  cd ..
+  914  vi slurm_submit_hydra_nprocs_show_hosts.sh l
+  915  ll -tr
+  916  cat slurm_submit_hydra_nprocs_show_hosts.sh 
+  917  cd NEW_SCRIPT/
+  918  ll 0-tr
+  919  ll -tr
+  920  rm fajl_*
+  921  ll -tr
+  922  vi slurm_submit_hydra_nprocs_show_hosts.sh 
+  923  sbatch slurm_submit_hydra_nprocs_show_hosts.sh 
+  924  rm nodelist.159118 
+  925  jobss
+  926  ll -tr
+  927  cat slurm_submit_hydra_nprocs_show_hosts.sh 
+  928  :q
+  929  ll -tr
+  930  vi slurm_submit_hydra_nprocs_show_hosts.sh 
+  931  sbatch slurm_submit_hydra_nprocs_show_hosts.sh 
+  932  jobss
+  933  ll -tr
+  934  cat nodelist.163823 
+  935  ll -tr
+  936  c- slurm_submit_hydra_nprocs_show_hosts.sh slurm_submit_hydra_nprocs_show_hosts_per_node.sh
+  937  mv slurm_submit_hydra_nprocs_show_hosts.sh slurm_submit_hydra_nprocs_show_hosts_per_node.sh
+  938  cp slurm_submit_hydra_nprocs_show_hosts_per_node.sh ~
+  939  ll  ~ -tr
+  940  vi slurm_submit_hydra_nprocs_show_hosts_per_node.sh 
+  941  ll
+  942  mkdir CPU_INFO
+  943  cd CPU_INFO/
+  944  cp ../* .
+  945  vi ../slurm_submit_hydra_nprocs_show_hosts_per_node.sh 
+  946  ll -tr
+  947  rm fajl_*
+  948  ll -tr
+  949  rm nodelist.163823 
+  950  sbatch slurm_submit_hydra_nprocs_show_hosts_per_node.sh 
+  951  jobss
+  952  ll -tr
+  953  cat CPU_INFO 
+  954  ll -tr
+  955  less nodelist.165091 
+  956  cat cpu CPU_INFO 
+  957  cat cpu CPU_INFO | grep processor
+  958  vi slurm_submit_hydra_nprocs_show_hosts_per_node.sh 
+  959  ll -tr
+  960  cat slurm_submit_hydra_nprocs_show_hosts_per_node.sh 
+  961  cat nodelist.165091 
+  962  less results-103318
+  963  less results-10331859.out 
+  964  ll -tr
+  965  cat slurm_submit_hydra_nprocs_show_hosts_per_node.sh 
+  966  cat nodelist.165091 
+  967  cat slurm_submit_hydra_nprocs_show_hosts_per_node.sh 
+  968  history
+  969  l -tr
+  970  scontrol show -all
+  971  cd
+  972  ll -tr
+  973  cat show_partitions.txt 
+  974  scontrol show partition --all
+  975  scontrol show partition --all | grep TotalCPU
+  976  cat ~/BINS/jobss 
+  977  history
+  978  scontrol show partition --all
+  979  ll -tr
+  980  ifconfig 
+  981  uname -a
+  982  cd JUNOLO/
+  983  ll -tr
+  984  cd COMPILE_FOR_DEBUG_INTEL/
+  985  ll -tr
+  986  jobss 
+  987  man squeue
+  988  squeue -a -j 10331866
+  989  cat ~/BINS/jobss 
+  990  :q
+  991  qstat -f 10331866
+  992  cat ~/BINS/jobss 
+  993  scontrol show job
+  994  jobss
+  995  scontrol show job 10331866
+  996  ll -tr
+  997  cd TRY_PROFILING_24
+  998  ll -tr
+  999  less results-10331678.out 
+ 1000  clear
+ 1001  ll
+ 1002  df 
+ 1003  cd data/
+ 1004  cd ..
+ 1005  cd scratch/
+ 1006  ls
+ 1007  ll
+ 1008  cd ..
+ 1009  ll -tr
+ 1010  df -h
+ 1011  cd data/
+ 1012  ls
+ 1013  ll
+ 1014  mkdir GIT_INTERVIEW
+ 1015  cd GIT_INTERVIEW/
+ 1016  touch README.md
+ 1017  git init
+ 1018  git add README.md
+ 1019  git remote add origin git@github.com:plazicx/CI_INTERVIEW.git
+ 1020  git commit -am "initial"
+ 1021  git push -u origin master
+ 1022  ll t-r
+ 1023  ll -tr
+ 1024  vi README.md 
+ 1025  mkdir LAB
+ 1026  ll
+ 1027  chmod 773 LAB/
+ 1028  ll
+ 1029  chmod 770 LAB/
+ 1030  ll
+ 1031  date
+ 1032  date > time.txt
+ 1033  vi time.txt 
+ 1034  uname -a
+ 1035  w
+ 1036  echo "x"
+ 1037  echo "THis cluster"
+ 1038  echo "THis cluster is very cool"
+ 1039  echo "THis cluster is very cool\!"
+ 1040  echo 'THis cluster is very cool!'
+ 1041  for i in {1..10}; do  echo "cool cluster $i"; done
+ 1042  free
+ 1043  free -h
+ 1044  quota
+ 1045  df -h /home/plazicx.gmail.com/
+ 1046  pwd
+ 1047  df -h /home/plazicx.gmail.com/data/
+ 1048  cd
+ 1049  ll 
+ 1050  ll  | grep data
+ 1051  lfs quota -hg plazicx.gmail.com /storage/hpc/data/
+ 1052  cat ~/.bashrc 
+ 1053  w
+ 1054  python
+ 1055  python3
+ 1056  pip install numpy
+ 1057  python3
+ 1058  python
+ 1059  clear
+ 1060  module avail
+ 1061  ll -tr
+ 1062  cd R_TEST/
+ 1063  ll -tr
+ 1064  sbatch submit_R.sh 
+ 1065  jobss
+ 1066  vi submit_R.sh 
+ 1067  jobss
+ 1068  ll -tr
+ 1069  cat slurm-10337067.out 
+ 1070  cd ..
+ 1071  cp -r R_TEST/ data/GIT_INTERVIEW/
+ 1072  cd data/GIT_INTERVIEW/
+ 1073  git commit -am "software modules"
+ 1074  git push
+ 1075  squeue 
+ 1076  squeue  | grep Q
+ 1077  squeue  | grep PD
+ 1078  scontrol show partition --all
+ 1079  sinfo 
+ 1080  man sinfo
+ 1081  sinfo -a
+ 1082  man sinfo
+ 1083  sinfo -p hpc5
+ 1084  man sinfo
+ 1085  ll -tr
+ 1086  cd R_TEST/
+ 1087  ll -tr
+ 1088  less slurm-10331775.out 
+ 1089  cat ~/BINS/jobss 
+ 1090  scontrol show job 
+ 1091  ll
+ 1092  scontrol show job 10337067
+ 1093  sacct
+ 1094  sacct 10337067
+ 1095  man sacct
+ 1096  sacct -b 10337067
+ 1097  man sacct
+ 1098  c
+ 1099  cd
+ 1100  cd data/
+ 1101  ls
+ 1102  cd
+ 1103  cd R_TEST/
+ 1104  ll
+ 1105  vi submit_R.sh 
+ 1106  sbatch submit_R.sh 
+ 1107  jobss
+ 1108  cd ..
+ 1109  cp -r R_TEST/ ~/data/GIT_INTERVIEW/
+ 1110  cd ~/data/GIT_INTERVIEW/
+ 1111  ll
+ 1112  history
+ 1113  history > hist.txt
