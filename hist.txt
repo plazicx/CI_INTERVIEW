@@ -1,68 +1,3 @@
-  114  cd TRY_PROFILING_48_PLUS_MPI/
-  115  ll -tr
-  116  cat slurm_submit_hydra_vtune_mpi.sh 
-  117  jobss
-  118  cd ..
-  119  ll -tr
-  120  cd TRY_PROFILING_28_PLUS_MPI/
-  121  ll -tr
-  122  cat slurm_submit_hydra_vtune_mpi.sh 
-  123  cd ..
-  124  ll -tr
-  125  cd TRY_PROFILING_48_PLUS_MPI/
-  126  ll -tr
-  127  rm file_*
-  128  rm -r profile.out.lewis4-*
-  129  ll -tr
-  130  cat slurm_submit_hydra_vtune_mpi.sh 
-  131  :q
-  132  sbatch slurm_submit_hydra_vtune_mpi.sh 
-  133  jobss
-  134  scancel 10331740
-  135  jobss
-  136  cd ..
-  137  ll -tr
-  138  cd TRY_PROFILING_28_PLUS_MPI/
-  139  ll -tr
-  140  cd ..
-  141  ll -tr
-  142  cp -r TRY_PROFILING_28_PLUS_MPI/ TRY_PROFILING_24_PLUS_MPI
-  143  cd TRY_PROFILING_24_PLUS_MPI
-  144  ll -tr
-  145  vi slurm_submit_hydra_vtune_mpi.sh 
-  146  sbatch slurm_submit_hydra_vtune_mpi.sh 
-  147  jobss
-  148  scancel 10331711
-  149  cd ..
-  150  cd TRY_PROFILING_28_PLUS_MPI/
-  151  ll -tr
-  152  cd ..
-  153  rm -r TRY_PROFILING_28_PLUS_MPI/
-  154  ll -tr
-  155  cd TRY_PROFILING_48_PLUS_MPI/
-  156  ll -tr
-  157  jobss
-  158  cd ..
-  159  ll -tr
-  160  cd TRY_PROFILING_24_2_nodes_hpc5_MPI/
-  161  ll -tr
-  162  cd 
-  163  find . -name "*AUTOM*"
-  164  cd data/
-  165  find . -name "*AUTOM*"
-  166  cd ./RH_LEWIS/TEST_5000_INTEL_HYDRA_ETC/A_BIT_LONGER_TESTS/MPIRUN_BOOTSTRAP_HYDRA_NEW_MPI_STATUS_CODE/MORE_NODES/TRY_AUTOMATIC_NPROCS/
-  167  ll -0tr
-  168  ll -tr
-  169  vi slurm_submit_hydra_nprocs.sh 
-  170  ll -tr
-  171  vi slurm_submit_hydra_nprocs.sh 
-  172  ll -tr
-  173  vi slurm_submit_hydra_nprocs.sh 
-  174  cd 
-  175  cd data/
-  176  ll -tr
-  177  cd JUNOLO_TEST_HYDRA/
-  178  ll -tr
   179  cd TRY_PROFILING
   180  cd ..
   181  cd TRY_PROFILING_24/
@@ -998,3 +933,68 @@
  1111  ll
  1112  history
  1113  history > hist.txt
+ 1114  less hist.txt 
+ 1115  ll
+ 1116  git commit -am "using a cluster"
+ 1117  git push
+ 1118  git checkout -b new_branch
+ 1119  git push -u origin new_branch
+ 1120  ll
+ 1121  vi README.md 
+ 1122  git commit -am "new branch"
+ 1123  git checkout master
+ 1124  vi README.md 
+ 1125  git commit -am "master "
+ 1126  git merge new_branch
+ 1127  less README.md 
+ 1128  vi README.md 
+ 1129  git add .
+ 1130  git commit -am "resolved"
+ 1131  git push
+ 1132  wget http://www.loremipsum.de/downloads/original.txt 
+ 1133  ll -tr
+ 1134  vi original.txt 
+ 1135  locate cities.csv
+ 1136  cd ..
+ 1137  du -sh .
+ 1138  tar -cvf data.tar *
+ 1139  ll -tr
+ 1140  gzip data.tar 
+ 1141  ll
+ 1142  ll -tr
+ 1143  rm data.tar 
+ 1144  i
+ 1145  id
+ 1146  cd 
+ 1147  less modules_lewis.txt 
+ 1148  cd JUNOLO/
+ 1149  ll -tr
+ 1150  cd COMPILE_FOR_DEBUG_INTEL/
+ 1151  ll -tr
+ 1152  cd TRY_PROFILING_24
+ 1153  ll -tr
+ 1154  vi slurm_submit_hydra_vtune.sh 
+ 1155  jobss
+ 1156  cd ..
+ 1157  cp -r TRY_PROFILING_24 TRY_PROFILING_24_NEW
+ 1158  cd TRY_PROFILING_24_NEW
+ 1159  ll
+ 1160  rm file_*
+ 1161  rm -r profile.out.lewis4-r630-hpc4-node225/
+ 1162  ll
+ 1163  cat slurm_submit_hydra_vtune.sh 
+ 1164  ll -tr
+ 1165  sbatch slurm_submit_hydra_vtune.sh 
+ 1166  jobss
+ 1167  ll -tr
+ 1168  jobs
+ 1169  jobss 
+ 1170  less ~/job_table_slurm_plazicx.gmail.com.txt 
+ 1171  jobss
+ 1172  ll -tr
+ 1173  less results-10337127.out 
+ 1174  cd ..
+ 1175  cp -r TRY_PROFILING_24_NEW/ ~/data/GIT_INTERVIEW/
+ 1176  cd ~/data/GIT_INTERVIEW/
+ 1177  ll -tr
+ 1178  history > hist.txt 
